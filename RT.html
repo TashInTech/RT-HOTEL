@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RT Hotel | Mbarara</title>
+  <link rel="stylesheet" href="RT.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="RT LOGO.jpg" alt="RT Hotel Logo">
+      <span>RT Hotel</span>
+    </div>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+      <a href="#menu">Menu</a>
+      <a href="#rooms">Rooms</a>
+      <a href="GALLARY.HTML">Gallery</a>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay">
+      <h1>Welcome to RT Hotel</h1>
+      <p>Comfort & Luxury in the Heart of Mbarara</p>
+    </div>
+  </section>
+
+  <!--ROOMS-->
+  <section class="rooms animate" id="rooms">
+    <h2>RT ROOMS</h2>
+    <section class="all-rooms">
+      <div>
+        <img src="executive.jpeg" alt="executive room">
+        <p>EXUCUTIVE ROOM</p>
+      </div>
+       <div>
+        <img src="comfort.jpeg" alt="comfort room">
+        <p>COMFORT ROOM</p>
+      </div>
+       <div>
+        <img  src="personal.jpeg" alt="PERSONAL ROOM">
+        <p>PERSONAL ROOM</p>
+      </div>
+       <div>
+        <img  src="deluxe.jpeg" alt="deluxe room">
+        <p>DELUXE ROOM</p>
+      </div>
+       <div>
+        <img  src="royal.jpeg" alt="ROYAL room">
+        <p>ROYAL ROOM</p>
+      </div>
+       <div>
+        <img  src="premium.jpeg" alt="premium room">
+        <p>PREMIUM ROOM</p>
+      </div>
+    </section>
+  </section>
+
+  <!--MENU-->
+  <section class="menu animate" id="menu">
+    <h2>RT MENU</h2>
+    <section class="detail-menu">
+      <div>
+        <img width="270" src="fish2.jpg" alt="fish meal">
+        <p>FISH MEAL AT UG SHS 20000</p>
+      </div>
+       <div>
+        <img width="270" src="meat.jpeg" alt="meat meal">
+        <p>MEAT MEAL AT UG SHS 15000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="spagheti.jpeg" alt="spagheti meal">
+        <p>SPAGHETI AT UG SHS 7000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="samosas.jpeg" alt=" samosas">
+        <p>BREAK ESCORTS AT UG SHS 10000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="french-beans-aloo-recipe-1a.jpg" alt="french beans">
+        <p>FRENCH MEAL AT UG SHS 8000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="fish.jpeg" alt="fish meal">
+        <p>FISH CREAM AT UG SHS 20000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="goatmeat.jpeg" alt="meat mel">
+        <p>GOAT MEAT MEAL AT UG SHS 15000</p>
+      </div>
+       <div>
+        <img width="270" height="180" src="breakfirst.jpeg" alt="Breakfirst food">
+        <p>BREAK MEAL AT UG SHS 10000</p>
+      </div>
+    </section>
+    <a href="GALLARY.HTML"><button id="gallery">GALLERY</button></a>
+  </section>
+
+  <!--KEY FEATURES-->
+  <h2 id="features">KEY FEATURES</h2>
+  <section class="features animate">
+    <div class="icons" >
+      <img width="40" src="accommodation.png" alt="accommodation icon">
+      <p>accommodation</p>
+    </div>
+    <div class="icons">
+      <img class="icons" width="40" src="bar.png" alt="bar icon">
+      <p>bar and restaurant</p>
+    </div>
+    <div class="icons">
+      <img  width="40" src="garden.png" alt="gardens icon">
+      <p>gardens</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="sauna.png" alt="sauna icon">
+      <p>sauna and steam</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="party.png" alt="party icon">
+      <p>wedding and party venue</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="saloon.jpg" alt="saloon icon">
+      <p>saloon and massage spa</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="gym.png" alt="gym icon">
+      <p>gym</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="wifi.avif" alt="wifi icon">
+      <p>wifi</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="camp fire.avif" alt="camp fire icon">
+      <p>camp fire</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="kids.png" alt="kids palace icon">
+      <p>kids palace</p>
+    </div>
+    <div class="icons">
+      <img width="40" src="room.jpg" alt="room icon">
+      <p>24/7 room services</p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section animate" id="booking">
+    <h2>Book Your Stay</h2>
+    <form for="form-elements" class="booking-form" >
+      <label for="date">Check In</label>
+      <input type="date" placeholder="date" id="checkin" title="choose a date">
+      <label for="date">Check Out</label>
+      <input type="date"  placeholder="date" id="checkout" title="choose a date">
+      <label for="adults">Adults</label>
+      <input type="text" id="adults">
+      <label for="children">Children</label>
+      <input type="text" id="children" placeholder="0">
+      <label for="roomtype">Room type</label>
+      <select  name="roomtype" id="roomtype">
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+        <option value="suite">Suite</option>
+        <option value="family">Family</option>
+      </select>
+      <label for="name">Name</label>
+      <input type="text" placeholder="Full Name" id="name" required>
+      <label for="email">Email</label>
+      <input type="email" placeholder="Email" id="email">
+      <label for="number">Phone Number</label>
+      <input type="number" placeholder="Phone Number" id="number" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!--ABOUT US-->
+  <div class="aboutus animate">
+    <h2>About Us</h2>
+    <p>RT Hotel is a welcoming hospitality venue located in heart of Mbarara town in Western uganda.</p>
+    <p>It offers a relaxed and friendly atmosphere where guests can enjoy confortable accommodation along side quality food and drinks</p>
+    <p>With an on-site restaurant and bar, RT Hotel hotel is ideal for both travelers and locals looking for pleasant stay, great meals and place to unwind in one of Mbarara's vibrant neighbourhoods. </p>
+    <p>The hotel is known for warm hospitality, personalised services and convinient location, making every guest feel at home</p>
+    <p>THANK YOU !</p>
+
+  </div>
+
+
+  <!-- Contact Section -->
+   <section class="background">
+  <section class="section animate" id="contact">
+    <h2>Contact Us</h2>
+    <div>
+      <img width="40" src="location.png" alt="location icon">
+    <p>Mbarara, Uganda</p>
+  </div>
+    <p>📞 +256 759 258 767</p>
+    <p>✉️ info@rthotel.com</p>
+    <a href="#">tashpreston2002@gmail.com</a>
+  </section>
+  <!--SOCIAL MEDIA PLATFORMS-->
+  <div class="main animate">
+  <h2>Social Media Platforms</h2>
+  <section class="platforms">
+    <div>
+      <img width="40" src="facebook.png" alt="Facebook">
+      <p>Facebook</p>
+    </div>
+    <div>
+     <img width="40" src="tiktok.png" alt="Tiktok">
+      <p>Tiktok</p>
+    </div>
+    <div>
+     <img width="40" src="istagram.jpeg" alt="Istagram">
+      <p>Istagram</p>
+    </div>
+    <div>
+     <img width="40" src="x.png" alt="Twitter">
+      <p>X (Twitter)</p>
+    </div>
+  </section>
+</div>
+
+  <!--QUICK LINKS-->
+  <div class="links animate">
+    <a href="#home"><button>Homes</button></a>
+    <a href="#booking"><button>Booking</button></a>
+    <a href="#contact"><button>Contact</button></a>
+    <a href="#rooms"><button>Rooms</button></a>
+    <a href="#menu"><button>Menu</button></a>
+    <a href="GALLARY.HTML"><button>Gallery</button></a>
+  </div>
+
+  <footer>
+    <p>© 2025 RT Hotel – Mbarara || All rights reserved || powered by Preston Tash In Tech</p>
+  </footer>
+   </section>
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="RT.js"></script>
+</body>
+</html>
