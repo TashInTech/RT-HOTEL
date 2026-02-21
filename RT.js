@@ -81,5 +81,6 @@ document.querySelector(".booking-form")
   console.log(url);
  window.open(url,"_blank");
  alert('Whatssap will open please review the messages and tap "send button"')
- //e.reset()
+ e.target.reset();
  });
+
