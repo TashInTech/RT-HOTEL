@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RT Hotel | Gallery</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    body {
+      background: #f9f5f2;
+      color: #222;
+    }
+
+    .gallery-header {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.88);
+      backdrop-filter: blur(6px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      z-index: 100;
+    }
+
+    .gallery-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .gallery-logo img {
+      width: 38px;
+      border-radius: 0.4rem;
+    }
+
+    .back-btn {
+      color: #ff6b35;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .back-btn:hover {
+      color: #fff;
+    }
+
+    .gallery-hero {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d1a0e 100%);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .gallery-hero h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.6rem;
+    }
+
+    .gallery-hero p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .gallery-wrap {
+      padding: 2rem 1.5rem;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .photos img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 0.6rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .photos img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .gallery-cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2.5rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .gallery-cta button {
+      padding: 13px 30px;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: #ff6b35;
+      color: #fff;
+      border: none;
+      transition: background 0.3s;
+    }
+
+    .gallery-cta button:hover {
+      background: #e85c28;
+    }
+
+    .btn-outline {
+      background: transparent !important;
+      color: #ff6b35 !important;
+      border: 2px solid #ff6b35 !important;
+    }
+
+    .btn-outline:hover {
+      background: #ff6b35 !important;
+      color: #fff !important;
+    }
+
+    .gallery-footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.88rem;
+    }
+
+    .gallery-footer a {
+      color: #ff6b35;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1200px) {
+      .photos { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 800px) {
+      .photos { grid-template-columns: repeat(2, 1fr); }
+      .gallery-hero h1 { font-size: 1.8rem; }
+    }
+
+    @media (max-width: 480px) {
+      .photos { grid-template-columns: 1fr; }
+      .gallery-hero h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="gallery-header">
+    <a href="index.html" class="gallery-logo">
+      <img src="RT LOGO.jpg" alt="RT Hotel Logo">
+      <span>RT Hotel</span>
+    </a>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </header>
+
+  <section class="gallery-hero">
+    <h1>RT Hotel in Pictures</h1>
+    <p>A glimpse into the comfort, luxury and beauty that awaits you.</p>
+  </section>
+
+  <section class="gallery-wrap">
+    <div class="photos">
+      <img src="beach.jpeg" alt="Hotel surroundings">
+      <img src="breakfirst.jpeg" alt="Breakfast">
+      <img src="Guinness-Storehouse.jpg" alt="Bar area">
+      <img src="honeymoon.jpeg" alt="Honeymoon suite">
+      <img src="hotel_look_3.jpg" alt="Hotel exterior">
+      <img src="image1.jpeg" alt="Hotel view 1">
+      <img src="image2.jpeg" alt="Hotel view 2">
+      <img src="image3.jpeg" alt="Hotel view 3">
+      <img src="image4.jpeg" alt="Hotel view 4">
+      <img src="image5.jpeg" alt="Hotel view 5">
+      <img src="image6.jpeg" alt="Hotel view 6">
+      <img src="image7.jpeg" alt="Hotel view 7">
+      <img src="image8.jpeg" alt="Hotel view 8">
+      <img src="image9.jpeg" alt="Hotel view 9">
+      <img src="image13.jpeg" alt="Hotel view 13">
+      <img src="luxurysuite.webp" alt="Luxury Suite">
+      <img src="penthouse.jpg" alt="Penthouse">
+      <img src="presidential.jpeg" alt="Presidential Suite">
+      <img src="relax.jpeg" alt="Relaxation area">
+      <img src="royal.jpeg" alt="Royal Room">
+    </div>
+  </section>
+
+  <div class="gallery-cta">
+    <a href="index.html#booking"><button>Book a Room Now</button></a>
+    <a href="index.html"><button class="btn-outline">Back to Home</button></a>
+  </div>
+
+  <footer class="gallery-footer">
+    <p>© 2025 RT Hotel – Mbarara &nbsp;|&nbsp; All rights reserved &nbsp;|&nbsp; Built by <a href="https://prestontash.com" target="_blank">TashInTech</a></p>
+  </footer>
+
+</body>
+</html>
